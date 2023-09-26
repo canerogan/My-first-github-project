@@ -170,6 +170,7 @@ FIRATO
 .firato {
     background-color: bisque;
     height: 300px;
+    flex-direction: column;
     
     padding: 10px 10px 10px 10px;
     display: flex;
