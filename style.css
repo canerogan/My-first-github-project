@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #ffc300;
+}
+
+
+header {
+    background-color: #eadcff;
+    height: calc(100vh - 370px);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.subheader {
+    font-size: 24px;
+
+}
+
+button {
+    background-color: #05c7cf;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 300px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 16px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+
+/* 
+
+About
+
+*/
+
+#about {
+    padding: 12px 0;
+    background-color: bisque;
+}
+
+.section__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about__img--wrapper, .section__description--wrapper {
+    width:80%;
+    padding: 0 24px;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+.section__description--para {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+
+/* 
+
+DISCORD
+
+*/
+
+#discord {
+ padding: 48px 0;
+ background-color: #eadcff;
+}
+
+
+/* 
+
+Contact
+
+*/
+
+#contact {
+    padding: 48px 0;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+input, textarea {
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+
+
+
+
+/* 
+
+FIRATO
+
+*/
+
+
+
+.firato {
+    background-color: bisque;
+    height: 300px;
+    
+    padding: 10px 10px 10px 10px;
+    display: flex;
+
+    align-items: center;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    width: 400px;
+    height: 250px;
+    
+}
+

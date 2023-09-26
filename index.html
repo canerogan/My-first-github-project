@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>reines html so far</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="" />
+        <img src="./assets/FES.svg" class="logo" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
@@ -17,81 +18,96 @@
         </ul>
       </nav>
 
-
-      <section>
-        <h1>My Message to Firato:</h1>
-          <iframe src="./assets/Shia LaBeouf - Just Do It (Make Your Dreams Come True) [Ultimate Remix] [5-sfG8BV8wU].webm"
-           width="560" height="315" frameborder="0" allowfullscreen></iframe>
-      </section>
-      
-      
-      <header>
-
+      <section class="firato">
         <div>
-          <h1>Best place to learn frontend</h1>
-          <p>Go from being an absolute beginner to pro with this couse.</p>
-          <button>Start now</button>
+          <h1>My Message to Firato:</h1>
+          <p>
+            Yesterday you said tomorrow. So just do it. Make you dreams come
+            true. YES YOU CAN!
+          </p>
         </div>
-        <figure>
-          <img src="./assets/laptop.png" alt="Homepage image" />
-        </figure>
+        <iframe
+          class="video-container"
+          src="./assets/Shia LaBeouf - Just Do It (Make Your Dreams Come True) [Ultimate Remix] [5-sfG8BV8wU].webm"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <header>
+        <div class="row">
+          <div>
+            <h1>Best place to learn frontend</h1>
+            <p class="subheader">
+              Go from being an absolute beginner to pro with this couse.
+            </p>
+            <button>Start now</button>
+          </div>
+          <figure>
+            <img src="./assets/laptop.png" alt="Homepage image" />
+          </figure>
+        </div>
       </header>
     </section>
-
 
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt earum
-            necessitatibus in. Vitae earum officiis aliquid obcaecati numquam
-            quam nobis voluptatum ad, quod optio, perferendis harum excepturi
-            iure natus rerum!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias modi,
-            pariatur harum iusto vero mollitia ad, itaque magni odit vitae
-            fugiat, delectus debitis exercitationem voluptatum ducimus! Ducimus
-            impedit placeat officia.
-          </p>
+        <div class="section__description">
+          <div class="section__description--wrapper">
+            <p class="section__description--para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              earum necessitatibus in. Vitae earum officiis aliquid obcaecati
+              numquam quam nobis voluptatum ad, quod optio, perferendis harum
+              excepturi iure natus rerum!
+            </p>
+            <p class="section__description--para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              modi, pariatur harum iusto vero mollitia ad, itaque magni odit
+              vitae fugiat, delectus debitis exercitationem voluptatum ducimus!
+              Ducimus impedit placeat officia.
+            </p>
+          </div>
+          <figure class="about__img--wrapper">
+            <img src="./assets/about.jpg" alt="" />
+          </figure>
         </div>
-        <figure>
-          <img src="./assets/about.jpg" alt="" />
-        </figure>
       </section>
+
       <section id="discord">
         <h2>Discord</h2>
-        <figure>
-          <img src="./assets/discord.png" />
-        </figure>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos illum
-            minima atque dignissimos corporis quam sunt ullam doloribus magni
-            ipsam. Aliquid dignissimos facilis dolor commodi unde? Enim nesciunt
-            natus atque?
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iste,
-            nostrum amet modi possimus sunt. Autem eum reprehenderit nesciunt,
-            suscipit minus architecto iusto rerum quasi, eveniet tempora
-            obcaecati explicabo recusandae!
-          </p>
+        <div class="section__description">
+          <figure class="about__img--wrapper">
+            <img src="./assets/discord.png" />
+          </figure>
+          <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                illum minima atque dignissimos corporis quam sunt ullam
+                doloribus magni ipsam. Aliquid dignissimos facilis dolor commodi
+                unde? Enim nesciunt natus atque?
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+                iste, nostrum amet modi possimus sunt. Autem eum reprehenderit
+                nesciunt, suscipit minus architecto iusto rerum quasi, eveniet
+                tempora obcaecati explicabo recusandae!
+              </p>
+            </div>
         </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <form action="">
+          <span>E-Mail</span>
           <input type="text" placeholder="jane@example.com" />
           <span>Message</span>
-          <br />
           <textarea
             type="text"
             placeholder="here you can write about yourself"
           ></textarea>
-          <button>Send</button>
+          <button>Contact me</button>
         </form>
       </section>
     </main>
